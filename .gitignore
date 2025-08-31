@@ -1,0 +1,15 @@
+.idea
+*.vs/
+.vs/
+*.user
+*.suo
+*.sdf
+*.sln.docstates
+*.log
+*.cache
+Thumbs.db
+.vscode
+[Rr]elease/
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
