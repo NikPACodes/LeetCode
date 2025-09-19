@@ -18,10 +18,3 @@ class Solution:
                 if len_pref == 0:
                     break
         return pref
-
-#
-# test = Solution()
-# print(test.prefix(["flower","flow","flight"]))
-# print(test.prefix(["dog","racecar","car"]))
-# print(test.prefix(["dog","dogs","dog"]))
-#
