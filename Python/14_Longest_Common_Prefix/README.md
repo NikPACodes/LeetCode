@@ -63,3 +63,27 @@ __Constraints:__
     ```
 6) Steps 4-5 are repeated until the list of strings `strs` __ends__, or the length of the searched prefix `len_pref` __decreases to $0$__
 7) We return the remaining prefix `pref`, which is the solution to our function.
+
+### Code
+```python
+class Solution:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
+        pref = ''
+        len_pref = 0
+        for i, v_str in enumerate(strs):
+            if i == 0:
+                pref, len_pref = v_str, len(v_str)
+            else:
+                if len_pref > len(v_str):
+                    len_pref = len(v_str)
+                    pref = pref[:len_pref]
+                while True:
+                    if v_str[:len_pref] == pref:
+                        break
+                    else:
+                        len_pref -= 1
+                        pref = pref[:len_pref]
+                if len_pref == 0:
+                    break
+        return pref
+```

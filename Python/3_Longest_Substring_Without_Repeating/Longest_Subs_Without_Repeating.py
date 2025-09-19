@@ -10,13 +10,3 @@ class Solution:
                 max_len = max(max_len, right - left + 1)
             check_dict[ch] = right
         return max_len
-
-#
-#
-# test = Solution()
-# print(test.lengthOfLongestSubstring("abcabcbb"))
-# print(test.lengthOfLongestSubstring("bbbbb"))
-# print(test.lengthOfLongestSubstring("pwwkew"))
-# print(test.lengthOfLongestSubstring(" "))
-# print(test.lengthOfLongestSubstring("dvdf"))
-# print(test.lengthOfLongestSubstring("tmmzuxt"))
