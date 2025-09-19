@@ -9,10 +9,7 @@ The digits are stored in __reverse order__, and each of their nodes contains a s
 Add the two numbers and return the sum as a linked list.  
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-
-
-__Example 1:__
-
+__Example 1:__  
 ![ex1](https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg)
 
 ```
@@ -35,7 +32,7 @@ Output: [8,9,9,9,0,0,0,1]
 
 __Constraints:__
 - _The number of nodes in each linked list is in the range [1, 100]_.
-- `0 <= Node.val <= 9`
+- $0 <=$ `Node.val` $<= 9$
 - _It is guaranteed that the list represents a number that does not have leading zeros_.
 
 
@@ -82,7 +79,6 @@ Since the list value can only contain one digit, we will create a variable for a
     ```
 7) _Repeat steps 3-6_ until the input lists run out (i.e. `l1 = None` and `l2 = None`) and there is no decimal place left (i.e. `intDiv = 0`)
 8) Returns `result_first` - __the first element node__ of our resulting linked list.
-
 
 ### Code
 ```python

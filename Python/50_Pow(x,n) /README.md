@@ -4,7 +4,7 @@
 [![RUS](https://img.shields.io/badge/README-Russian-blue.svg)](README.ru.md)
 </h1>
 
-Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., `x^n`).
+Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., $x^n$).
 
 __Example 1:__
 ```
@@ -26,11 +26,11 @@ Explanation: (2)^-2 = (1/2)^2 = 1/4 = 0.25
 ```
 
 __Constraints:__
-- `-100.0 < x < 100.0`
-- `(-2)^31 <= n <= (2^31)-1`
+- $-100.0 <$ `x` $< 100.0$
+- $-2^{31} <=$ `n` $<= 2^{31}-1$
 - `n` is an integer.
 - Either `x` is not zero or `n > 0`
-- `-10^4 <= x^n <= 10^4`
+- $-10^4 <= x^n <= 10^4$
 
 
 <br>
@@ -49,7 +49,6 @@ To solve this, we will look at all cases of raising a number to a power. ($x^n$)
   - If `n` is odd, then $x^n = x^{n-1}*x$  
   Example: $2^7 = 2^6 * 2 = (2^2)^3 * 2 = 4^2 * 4 * 2 = 16 * 8 = 128$
 - According to the problem statement, `n` is an integer, so we __won\`t consider__ this option, where `n` is a fraction and we need to find the root of the number.
-
 
 ### 1. Solution using a loop
 
@@ -91,15 +90,14 @@ class Solution:
         while True:
             if n == 1:
                 break
-
             if n % 2 != 0:
                 dop *= x
             x *= x
             n //= 2
         return x * dop
 ```
-<br>
 
+<br>
 
 ### 2. Solutions using recursion
 

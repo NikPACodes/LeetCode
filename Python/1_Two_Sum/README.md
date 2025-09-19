@@ -28,27 +28,25 @@ Output: [0,1]
 ```
 
 __Constraints:__
-
-- `2 <= nums.length <= 10^4`
-- `-10^9 <= nums[i] <= 10^9`
-- `-10^9 <= target <= 10^9`
+- $2 <=$ `nums.length` $<= 10^4$
+- $-10^9 <=$ `nums[i]` $<= 10^9$
+- $-10^9 <=$ `target` $<= 10^9$
 - __Only one valid answer exists.__
-
  
-__Follow-up:__ Can you come up with an algorithm that is less than `O(n^2)` time complexity?
+__Follow-up:__ Can you come up with an algorithm that is less than $O(n^2)$ time complexity?
 
 
 <br>
 <h2>Solution:</h2>
 
-
-### 1. A straightforward solution *(complexity `O(n^2)`)*
+### 1. A straightforward solution _(complexity $O(n^2)$)_
 
 Straightforward solution:  
 1) Loop through each element of the `nums` list
 2) Use a nested loop to check if there is a pair in the remaining elements that, when added to the current element of the list, equals `target`
    - If a pair is __found__, _return the corresponding pair of indices_ `return [i, j]`
 3) If a suitable pair is __not found__, _return an empty set_ `return []`
+
 ### Code
 ```python
 class Solution:
@@ -60,9 +58,10 @@ class Solution:
                     return [i, j]
         return []
 ```
+
 <br>
 
-### 2. Solutions using Hash-Table *(complexity `O(n)`)*
+### 2. Solutions using Hash-Table _(complexity $O(n)$)_
 
 Solution using hash table (using dictionary): 
 1) Create a dictionary `numsCheck = {}` that acts as our _hash table_
@@ -75,8 +74,9 @@ Solution using hash table (using dictionary):
    `return [numsCheck[num], i]`
    where `i` is _the index of the current element_,
    and `numsCheck[num]` is _the index of the element in the sum that gives the sought_ `target`
-   I.e. **`nums[numsCheck[num]] + nums[i] = target`**
+   i.e. `nums[numsCheck[num]] + nums[i] = target`
 4) If a suitable pair __was not found__, _return an empty set_ `return []`
+
 ### Code
 ```python
 class Solution(object):
