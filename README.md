@@ -1,2 +1,15 @@
-# LeetCode
-LeetCode Problems
+# LeetCode Problems
+
+[![RUS](https://img.shields.io/badge/README-Russian-blue.svg)](README.md)
+[![ENG](https://img.shields.io/badge/README-English-red.svg)](README.en.md)
+
+Данный репозиторий содержит варианты решения задач LeetCode.
+Репозиторий создан для решения задач LeetCode с целью освоения алгоритмов и практики их применения.  
+
+:exclamation:Репозиторий будет постоянно дополняться новыми решениями и реализациями решений на разных языках программирования.
+
+
+## Контрибьютинг
+1. Приветствуются любые улучшения — от справлений багов до более оптимальных вариантов решения задач! 
+2. Перед пушем убедитесь, что ваши изменения не ломают основную функциональность.
+3. Создайте pull request или [issues](https://github.com/NikPACodes/LeetCode/issues) для обсуждения.
