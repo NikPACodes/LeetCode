@@ -39,7 +39,7 @@ __Follow-up:__ Can you come up with an algorithm that is less than $O(n^2)$ time
 <br>
 <h2>Solution:</h2>
 
-### 1. A straightforward solution _(complexity $O(n^2)$)_
+### 1. A straightforward solution (complexity $$O(n^2)$$)
 
 Straightforward solution:  
 1) Loop through each element of the `nums` list
@@ -61,7 +61,7 @@ class Solution:
 
 <br>
 
-### 2. Solutions using Hash-Table _(complexity $O(n)$)_
+### 2. Solutions using Hash-Table (complexity $$O(n)$$)
 
 Solution using hash table (using dictionary): 
 1) Create a dictionary `numsCheck = {}` that acts as our _hash table_
